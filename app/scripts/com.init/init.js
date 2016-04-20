@@ -10,6 +10,12 @@
  */
 (function(){
 
+	var init = function(){
+	};
 
+	init.$inject = [];
+
+	angular.module('smallDemoApp')
+		.run(init);
 
 })();

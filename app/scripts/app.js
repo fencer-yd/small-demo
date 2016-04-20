@@ -8,20 +8,24 @@
  *
  * Main module of the application.
  */
-angular
-	.module('smallDemoApp', [
-		'ngAnimate',
-		'ngAria',
-		'ngCookies',
-		'ngMessages',
-		'ngResource',
-		'ngSanitize',
-		'ngTouch',
-		'ui.router',
+(function(){
 
-		'commonNavApp',
+	angular
+		.module('smallDemoApp', [
+			'ngAnimate',
+			'ngAria',
+			'ngCookies',
+			'ngMessages',
+			'ngResource',
+			'ngSanitize',
+			'ngTouch',
+			'ui.router',
+			'toastr',
+			'toaster',
 
-		'routeConfig'
+			'configApp',
+			'commonNavApp'
+		]);
 
+})();
 
-	]);

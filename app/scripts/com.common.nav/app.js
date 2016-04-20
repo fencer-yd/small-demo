@@ -11,6 +11,7 @@
 (function () {
 
 	angular.module('commonNavApp', [
+		'commonFullpageConfig',
 		'commonNavMain'
 	]);
 

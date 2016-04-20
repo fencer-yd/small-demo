@@ -11,11 +11,14 @@
 
 (function () {
 
-	var commonNavMainCtrl = function () {
+	var commonNavMainCtrl = function ($timeout,commonFullpageConfig) {
 
+		$timeout(function(){
+			$('#my_nav').fullpage(commonFullpageConfig.config);
+		});
 	};
 
-	commonNavMainCtrl.$inject = [];
+	commonNavMainCtrl.$inject = ['$timeout','commonFullpageConfig'];
 
 	angular.module('commonNavMain', [])
 		.controller('commonNavMainCtrl', commonNavMainCtrl);

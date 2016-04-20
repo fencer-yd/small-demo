@@ -13,13 +13,14 @@
 (function () {
 
 	var routeConfig = function ($stateProvider, $urlRouterProvider) {
-		$urlRouterProvider.otherwise("/");
+		$urlRouterProvider.otherwise('/');
 
 		$stateProvider
 			.state('main', {
 				url: '/',
 				templateUrl: 'views/com.common.nav/main.html',
-				controller: 'commonNavMainCtrl'
+				controller: 'commonNavMainCtrl',
+				controllerAs:'commonNavMain'
 			});
 	};
 
