@@ -16,16 +16,16 @@
 		$urlRouterProvider.otherwise("/");
 
 		$stateProvider
-			.$state('main', {
+			.state('main', {
 				url: '/',
 				templateUrl: 'views/com.common.nav/main.html',
 				controller: 'commonNavMainCtrl'
 			});
 	};
 
-	routeConfig.$inject = [];
+	routeConfig.$inject = ['$stateProvider', '$urlRouterProvider'];
 
-	angular.module('routeConfig', ['$stateProvider', '$urlRouterProvider'])
+	angular.module('routeConfig', [])
 		.config(routeConfig);
 
 })();

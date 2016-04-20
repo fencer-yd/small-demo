@@ -15,7 +15,13 @@ angular
 		'ngCookies',
 		'ngMessages',
 		'ngResource',
-		'ui.router',
 		'ngSanitize',
-		'ngTouch'
+		'ngTouch',
+		'ui.router',
+
+		'commonNavApp',
+
+		'routeConfig'
+
+
 	]);
