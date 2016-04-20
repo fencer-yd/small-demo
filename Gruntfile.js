@@ -174,7 +174,7 @@ module.exports = function (grunt) {
     postcss: {
       options: {
         processors: [
-          require('autoprefixer-core')({browsers: ['last 1 version']})
+          //require('autoprefixer-core')({browsers: ['last 1 version']})
         ]
       },
       server: {
@@ -393,6 +393,12 @@ module.exports = function (grunt) {
           cwd: 'bower_components/bootstrap/dist',
           src: 'fonts/*',
           dest: '<%= yeoman.dist %>'
+        },
+        {
+          expend: true,
+          cwd:'.tmp/concat/scripts/*.js',
+          src:'.tmp/concat/scripts/*.js',
+          dest:'<%= yeoman.dist %>/scripts'
         }]
       },
       styles: {
