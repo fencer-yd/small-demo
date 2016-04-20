@@ -1,0 +1,53 @@
+#common-nav-yd{
+    width: 100%;
+    height: 100%;
+}
+
+#common-nav-yd .head-nav{
+    height: 50px;
+    position: absolute;
+    width: 100%;
+    background-color: #62f1ee;
+    -webkit-box-shadow: 0px 0 10px 1px rgba(0,0,0,0.5);
+    -moz-box-shadow: 0px 0 10px 1px rgba(0,0,0,0.5);
+    box-shadow: 0px 0 10px 1px rgba(0,0,0,0.5);
+    z-index: 100;
+}
+
+#common-nav-yd .head-nav .head-nav-lt{
+    width: 150px;
+    float: left;
+    height: 100%;
+    margin-left: 50px;
+}
+
+#common-nav-yd .head-nav .head-nav-lt{
+    font-size: 14px;
+    line-height: 50px;
+}
+
+#common-nav-yd .head-nav .head-nav-lt i{
+    display: inline-block;
+    float: left;
+    width: 50px;
+    height: 50px;
+    background-image: url(../../images/com.common.nav/icon.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 30px 30px;
+}
+
+#common-nav-yd .head-nav .head-nav-rt{
+    width: 300px;
+    height: 100%;
+    float: right;
+}
+
+#common-nav-yd .section1{
+    background: rgba(122, 224, 132, 0.2);
+}
+
+#fp-nav ul li a span ,
+#common-nav-yd .fp-slidesNav ul li a span{
+    background: #999 !important;
+}
