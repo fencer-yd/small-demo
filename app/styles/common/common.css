@@ -1,0 +1,82 @@
+.h-center {
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.v-center {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.c-center {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.view-content {
+    width: 100%;
+    height: calc(100% - 60px);
+}
+.mCustomScrollBox.mCSB_vertical_horizontal.mCSB_inside > .mCSB_container_wrapper.mCS_no_scrollbar_x.mCS_x_hidden {
+    margin: 0 !important;
+}
+.mCSB_container_wrapper > .mCSB_container {
+    padding: 0 !important;
+    width: 100%;
+    height: 100%;
+}
+
+/*不能选中*/
+.can-not-select{
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+/*滚动条*/
+::-webkit-scrollbar-button {
+    display: none;
+    width: 0;
+    height: 0;
+}
+
+::-webkit-scrollbar-corner {
+    background-color: transparent;
+}
+
+::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+}
+
+::-webkit-scrollbar-track {
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb {
+    border-radius: 4px;
+    background: rgba(150, 150, 150, .3);
+}
+
+/*日期控件*/
+.datepicker, .datepicker-mode-0{
+    min-width: 280px !important;
+}
+
+.btn-save{
+    background-color: #00b28c;
+    color: #fff;
+}
+
+.btn-save:hover,.btn-save:focus,.btn-save:active{
+    color: #fff;
+    background-color: #65b2a6;
+    outline: none;
+}
